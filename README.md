@@ -1,18 +1,18 @@
-### 1. Prepare Your Environment 🌐
+### 1. Clone the Repository
 
-#### 1.1 First, create a directory for Docker volumes if you don't have one:
+```bash
+git clone git@github.com:edra-unb-fga/docker-configuration.git
+```
+
+### 2. Prepare Your Environment 🌐
+
+#### 2.1 First, create a directory for Docker volumes if you don't have one:
 
 ```bash
 mkdir ~/Volumes
 ```
 
-#### 1.2 Create a new `.env` file in the project root by copying `.env.example` and update the `HOST_USER` variable with your host username.
-
-### 2. Clone the Repository
-
-```bash
-git clone git@github.com:edra-unb-fga/docker-configuration.git
-```
+#### 2.2 Create a new `.env` file in the project root by copying `.env.example` and update the `HOST_USER` variable with your host username.
 
 ### 3. Build the Image 🛠️
 
