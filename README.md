@@ -1,7 +1,7 @@
 ### 1. Clone the Repository
 
 ```bash
-git clone git@github.com:edra-unb-fga/docker-configuration.git
+git clone git@github.com:Suyannesara/ROS2-px4-gazebo-docker.git
 ```
 
 ### 2. Prepare Your Environment 🌐
