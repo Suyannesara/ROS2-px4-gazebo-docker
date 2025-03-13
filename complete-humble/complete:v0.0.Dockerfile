@@ -101,5 +101,7 @@ RUN git clone https://github.com/PX4/PX4-Autopilot.git --recursive \
 COPY ../ros_entrypoint.sh /
 RUN chmod +x /ros_entrypoint.sh
 
+# TODO: Copiar pasta gz do fabio para o gz da Px4
+
 ENTRYPOINT ["/ros_entrypoint.sh"]
 CMD ["bash"]

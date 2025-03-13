@@ -43,3 +43,47 @@ services:
       stdin_open: true
       tty: true
 
+  docker-complete:
+      image: docker-complete:latest
+      container_name: docker-complete
+      build:
+        context: .
+        dockerfile: ./complete:v0.1.Dockerfile
+      volumes:
+        - /etc/group:/etc/group:ro
+        - /etc/passwd:/etc/passwd:ro
+        - /etc/shadow:/etc/shadow:ro
+        - /etc/sudoers.d:/etc/sudoers.d:ro
+        - /home:/home:rw
+        - /home/${HOST_USERNAME}/Volumes:/edra/Volumes
+      environment:
+        - DISPLAY=:0
+        - LIBGL_ALWAYS_SOFTWARE=1
+      network_mode: "host"
+      stdin_open: true
+      tty: true
+
+  docker-complete2:
+      image: docker-complete2:latest
+      container_name: docker-complete2
+      build:
+        context: .
+        dockerfile: ./complete:v0.2.Dockerfile
+      volumes:
+        - /etc/group:/etc/group:ro
+        - /etc/passwd:/etc/passwd:ro
+        - /etc/shadow:/etc/shadow:ro
+        - /etc/sudoers.d:/etc/sudoers.d:ro
+        - /home:/home:rw
+        - /home/${HOST_USERNAME}/Volumes:/edra/Volumes
+      environment:
+        - DISPLAY=:0
+        - LIBGL_ALWAYS_SOFTWARE=1
+      network_mode: "host"
+      stdin_open: true
+      tty: true
+
+
+
+  
+
